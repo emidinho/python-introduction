@@ -7,5 +7,5 @@ print ("emidio is almost a geek")
 a = 2
 if a == 2: 
     print ('a is 2')
-    if a % 2 == 0:
-        print ('a is even')  
+if a % 2 == 0:
+    print ('a is even')  
