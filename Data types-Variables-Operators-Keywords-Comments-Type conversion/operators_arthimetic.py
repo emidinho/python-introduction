@@ -16,14 +16,14 @@ mul = a * b
 # Division(float) of number
 div1 = a / b
 
-# Division(floor) of number
+# Division(floor) of number (whole divident only)
 div2 = a // b
 
-# Modulo of both number
+# Modulo of both number(remainder of the divident only)
 mod = a % b
 
 # Power
-p = a * b
+p = a ** b
 
 # print results
 print(add)
