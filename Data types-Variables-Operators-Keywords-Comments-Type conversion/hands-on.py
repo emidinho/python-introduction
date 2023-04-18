@@ -1,6 +1,6 @@
 # print(181500)
 # print(59*125)
-# price = 15 
+# price = 15
 # quantity = 10
 
 # print (price*quantity)
@@ -22,7 +22,7 @@
 # Price = 29999.99
 # bill_paid = False
 # quantity = 1
-# Discount = ((5.5/100)*Price) 
+# Discount = ((5.5/100)*Price)
 # Tax = ((25/100)*Price)
 
 # print("amount purchased: ", quantity)
@@ -55,16 +55,16 @@
 # print()
 
 # if math >= passing_score and science >= passing_score:
-#     print("test passed") 
+#     print("test passed")
 # else:
-#     print("test failed")    
+#     print("test failed")
 
 # print()
 
 # print("but for poor students, your grading is different.")
 
 # if math >= passing_score or science >= passing_score:
-#     print("test passed") 
+#     print("test passed")
 # else:
 #     print("test failed")
 
@@ -73,3 +73,27 @@
 # fruits = ["watermelon", "grapes", "oranges"]
 
 # print("grapes" in fruits)
+
+
+# customer_name = "emidio"
+# price = 10
+# quantity = int(input("number of items: "))
+
+# total = price*(quantity)
+
+# print("Total amount to be paid: $", total)
+
+# quantity = quantity + 3
+
+# total = price*(quantity)
+
+# print("Total amount to be paid: $", total)
+# print(type(quantity))
+
+# print("Total amount to be paid: ${}, customer_name: {}, price: ${}, quantity: {}kilos".format(
+#     total, customer_name, price, quantity,  ))
+
+
+
+
+
