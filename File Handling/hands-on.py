@@ -1,7 +1,10 @@
 f = open("test1.yml", "r")
+# print(f)
 
-f.read("hi there, still trying to figure out pytho" "\n lot to get done before geeting that job" "\n but we'll see how life ends though")
-print(f.readlines)
-f.close()
+# f.write("reviewing file handling. \n" "missed the concept from the start \n")
+# f.write("going back to it was quite fun. \n" "i think i got it now." )
+print(f.readlines(1))
+print(f.read())
+f.close
 
-# g = open("test.tf", "x")
+
