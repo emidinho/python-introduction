@@ -27,5 +27,4 @@ for i in object_list['Contents']:
 #     CopySource='/mybucket/folder1/foo.txt',  # /Bucket-name/path/filename
 #     Bucket='mybucket',                       # Destination bucket
 #     Key='folder2/foo.txt'                    # Destination Folder_path/filename
-                                               # Destination Folder_path is optional(N/B)
 # )
