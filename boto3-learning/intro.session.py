@@ -8,66 +8,66 @@ ec2 = session.client("ec2")
 
 #launching an ec2 instance with boto3
 
-response = ec2.run_instances(
-    BlockDeviceMappings=[
-        {
-            'DeviceName': '/dev/xvda',
-            'Ebs': {
+# response = ec2.run_instances(
+#     BlockDeviceMappings=[
+#         {
+#             'DeviceName': '/dev/xvda',
+#             'Ebs': {
 
-                'DeleteOnTermination': True,
-                'VolumeSize': 8,
-                'VolumeType': 'gp2'
-            },
-        },
-    ],
-    ImageId='ami-03c7d01cf4dedc891',
-    InstanceType='t2.micro',
-    MaxCount=1,
-    MinCount=1,
-    KeyName='linux-keypair',
-    SubnetId='subnet-01345df02fbb7abcb',
-    UserData='''
-          #!/bin/bash
-          sudo su
-          yum update -y
-          yum install -y httpd.x86_64
-          systemctl start httpd.service
-          systemctl enable httpd.service
-          echo "launching an instance through python" >> /var/www/html/index.html
-          ''',
-    Placement={
-        'AvailabilityZone': 'us-east-1a',
-        'Tenancy': 'default'
-    },
-    IamInstanceProfile={
-        'Name': 'EC2-AmazonS3ReadOnlyAccess'
-    },
-    Monitoring={
-        'Enabled': False
-    },
-    SecurityGroupIds=[
-        'sg-047d5bd78600371c7',
-    ],
-    TagSpecifications=[
-        {
-            'ResourceType': 'instance',
-            'Tags': [
-                {
-                    'Key': 'Name',
-                    'Value': 'server-boto3'
-                },
-            ]
-        },
-    ],
-)
+#                 'DeleteOnTermination': True,
+#                 'VolumeSize': 8,
+#                 'VolumeType': 'gp2'
+#             },
+#         },
+#     ],
+#     ImageId='ami-03c7d01cf4dedc891',
+#     InstanceType='t2.micro',
+#     MaxCount=3,
+#     MinCount=1,
+#     KeyName='linux-keypair',
+#     SubnetId='subnet-01345df02fbb7abcb',
+#     UserData='''
+#           #!/bin/bash
+#           sudo su
+#           yum update -y
+#           yum install -y httpd.x86_64
+#           systemctl start httpd.service
+#           systemctl enable httpd.service
+#           echo "launching an instance through python" >> /var/www/html/index.html
+#           ''',
+#     Placement={
+#         'AvailabilityZone': 'us-east-1a',
+#         'Tenancy': 'default'
+#     },
+#     IamInstanceProfile={
+#         'Name': 'EC2-AmazonS3ReadOnlyAccess'
+#     },
+#     Monitoring={
+#         'Enabled': False
+#     },
+#     SecurityGroupIds=[
+#         'sg-047d5bd78600371c7',
+#     ],
+#     TagSpecifications=[
+#         {
+#             'ResourceType': 'instance',
+#             'Tags': [
+#                 {
+#                     'Key': 'Name',
+#                     'Value': 'server-boto3'
+#                 },
+#             ]
+#         },
+#     ],
+# )
 
-print(response)
+# print(response)
 
 
 #terminating an ec2 instance with boto3
 # response_terminate = ec2.terminate_instances(
 #     InstanceIds=[
-#         'i-01be4965ee3ff7b50',
+#         'i-00e64c5d4f0c3f913', 'i-02c6966aafdd4baf1'
 #     ],
 #     DryRun=False
 # )
