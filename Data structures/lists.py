@@ -1,7 +1,8 @@
 #  List will be helpful to store multiple items in a single variable.
 
 """
-– Use lists if you have a collection of data that does not need random access. Try to choose lists when you need a simple, iterable collection that is modified frequently.
+– Use lists if you have a collection of data that does not need random access. 
+Try to choose lists when you need a simple, iterable collection that is modified frequently.
 """
 
 
@@ -12,7 +13,7 @@ numbers = [1, 2, 3, 4, 5]
 my_list = [1, "car", 10.40, True]
 
 
-# printing the list items
+# printing the listed items
 print('\n# printing the list items')
 print(fruits, id(fruits))
 print(prices)
@@ -23,13 +24,17 @@ print(my_list)
 print('\n# check the data type')
 print(type(fruits))
 print(type(numbers))
+print(type(numbers[2]))
+print(type(fruits[2]))
 
 
 # # nested list
 print('\n# nested list')
 my_custom_list = [fruits, prices, [6, 10, 2]]
 print(my_custom_list)
-
+print(my_custom_list[0])
+print(my_custom_list[1])
+print(my_custom_list[2])
 
 # # length of list
 print('\n# length of the list')
@@ -41,10 +46,12 @@ print(fruits[2])
 print(fruits[0])
 print(fruits[-1])
 print(fruits[-2])
+print(fruits[-5])
 
 # # slicing lists
 print('\n# slicing lists')
 print(fruits[0:2])
+print(fruits[:-3])
 print(fruits[1:4])
 print(fruits[1:])
 
@@ -68,6 +75,7 @@ print(fruits)
 # sort the list
 print('\n# sort() the list')
 fruits.sort()
+fruits.sort(reverse=True)
 print(fruits)
 
 # # insert item at a particular index
@@ -93,7 +101,7 @@ for index, each_item in enumerate(fruits):
 # # list with dictionaries inside
 print('\n# list with dictionaries inside')
 marks = [{"name": "vamsi", "marks": 50}, {"name": "avinash",
-                                          "marks": 60}, {"name": "showmik", "marks": 70}, ]
+                                          "marks": 60}, {"name": "showmik", "marks": 70}]
 print(marks)
 
 

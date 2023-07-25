@@ -15,6 +15,8 @@ print(x)
 # True, False, None
 print(False == 0)
 print(True == 1)
+print(False)
+print("False")
 
 print(True + True + True)
 print(True + False + False)

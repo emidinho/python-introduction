@@ -25,7 +25,7 @@ print(type(d))
 
 blood_group = None
 
-blood_group="O"
+blood_group="AB+"
 if blood_group is None:
     print('Blood group value is not available')
 else:
