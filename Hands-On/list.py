@@ -28,8 +28,6 @@
 # print(students[1:])
 # print(students[1:4])
 
-# fruits[4] = "limes"
-# print(fruits[0:])
 
 # print(dir(fruits))
 
@@ -40,10 +38,53 @@ fruits = ["kiwi", "grapes", "apple", "orange", "banana", "strawberry", "watermel
 
 
 print(fruits)
-print(fruits.sort(reverse=True))                 
-print(fruits.reverse())  
-print(fruits.append("zanziba"))
+
+fruits.sort(reverse=False)
+print(fruits)
+
+fruits.sort(reverse=True)
+print(fruits)
+
+fruits.reverse()
+print(fruits)  
+
+fruits.append("zanziba")
+print(fruits)
+
+x= fruits.index("mango")
+print(x)
+# or
 print(fruits.index("mango"))
+
+fruits.remove("banana")
+print(fruits)
+
+fruits.pop(1)
+print(fruits)
+
+fruits.insert(1, "orange")
+print(fruits)
+
+fruits[4] = "limes"  #(replacing orange with lime)
+print(fruits[0:])
+
+new_fruits = ['blueberry', 'cherry', 'blackberry']
+fruits.extend(new_fruits)
+print(fruits)
+
+x = fruits.count("cherry")
+print(x)
+# or
+print(fruits.count("cherry"))
+
+x = fruits.copy()
+print(x)
+# or
+print(fruits.copy())
 
 for each_fruit in fruits:
     print(each_fruit)
+
+fruits.clear()
+print(fruits)
+
