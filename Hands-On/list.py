@@ -88,3 +88,4 @@ for each_fruit in fruits:
 fruits.clear()
 print(fruits)
 
+##FACT ABOUT LIST. 1) MUTABLE(UPDATABLE) 2) CAN HAVE DUPLICATE VALUES
