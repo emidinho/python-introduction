@@ -5,4 +5,3 @@
 
 # print("go home")
 
-dir("emidio")
