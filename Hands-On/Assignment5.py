@@ -12,9 +12,6 @@ while attempt_count < total_attempt:
     attempt_count = attempt_count + 1
     tried_password = int(input("Enter password :"))
 
-    # if attempt_count == total_attempt and correct_password != 12345:
-    #     print("phone blocked")
-
     if correct_password == tried_password:
         print("login successful")
         break
@@ -23,5 +20,6 @@ while attempt_count < total_attempt:
         print("try again")
 
     
-    # print("enter password", attempt_count)
+if attempt_count == total_attempt:
+        print("phone blocked")
 
