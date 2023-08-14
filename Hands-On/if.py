@@ -5,3 +5,8 @@
 
 # print("go home")
 
+age = 25
+
+txt = "im john, i am {}"
+
+print(txt.format(age))
