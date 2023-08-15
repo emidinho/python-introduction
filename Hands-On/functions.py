@@ -18,6 +18,7 @@ get_ssm_parameter("/JJTech/immersionb/keyname")
 get_ssm_parameter("/JJTech/immersionb/default")
 get_ssm_parameter("/JJTech/immersionb/al2")
 get_ssm_parameter("/JJTech/immersionb/admin")
+# get_ssm_parameter("ohio-sdk")
 
 
 print()
