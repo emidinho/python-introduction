@@ -17,8 +17,8 @@ print()
 def updating_user(user_info, user_id):
     print("updating new user to: ", user_info)
     response = requests.put("{}{}{}".format(BASE_URL,EXTENSION,user_id),user_info)
-    print(response)
-    print(response.json())    
+    print("Response StatusCode: ",response)
+    print("Response: ",response.json())    
     
 updating_user({
         "name": "dasco",
@@ -38,8 +38,8 @@ print()
 def updating_user(user_info, user_id):
     print("updating new user to: ", user_info)
     response = requests.patch("{}{}{}".format(BASE_URL,EXTENSION,user_id),user_info)
-    print(response)
-    print(response.json())
+    print("Response StatusCode: ",response)
+    print("Response: ",response.json())
 
 updating_user({
     "name": "Frank",
@@ -58,7 +58,7 @@ print()
 def deleting_user(user_id):
     print("deleting user with user_id: ", user_id)
     response = requests.delete("{}{}{}".format(BASE_URL,EXTENSION,user_id))
-    print(response)
+    print("Response StatusCode: ",response)
     return response
 
 deleting_user(4)
