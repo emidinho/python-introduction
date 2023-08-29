@@ -25,8 +25,7 @@ print("\n# use methods from calendar module")
 # print(calendar)
 yy = 1995
 mm = 9
-dd = 1
-print(calendar.month(yy, mm, dd)) # display calendar of given month of the year
+print(calendar.month(yy, mm)) # display calendar of given month of the year
 
 
 # use methods from json module
